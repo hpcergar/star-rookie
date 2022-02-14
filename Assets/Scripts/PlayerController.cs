@@ -21,23 +21,34 @@ public class PlayerController : MonoBehaviour
     [Header("Player input tuning")]
     [SerializeField] float controlRollFactor = -20f;
     [SerializeField] float controlPitchFactor = 15f;
-    
+    float startDelay = 2f;
+    bool isStarted = false;
     
 
     private void Start()
     {
+        Invoke("StartControls", startDelay);
         ToggleLasers(false);
+    }
+
+    private void StartControls()
+    {
+        isStarted = true;
     }
 
     void Update()
     {
+        if(false == isStarted) {
+            return;
+        }
+        
         float xThrow = Input.GetAxis("Horizontal");
         float yThrow = Input.GetAxis("Vertical");
         ProcessTranslation(xThrow, yThrow);
         ProcessRotation(xThrow, yThrow);
         ProcessFiring();
     }
-
+    
     private void ProcessRotation(float xThrow, float yThrow)
     {
         float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
