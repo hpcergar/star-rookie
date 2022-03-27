@@ -18,6 +18,12 @@ public class ScoreBoard : MonoBehaviour
         refreshUI();
     }
 
+    public void DecreaseScore(int quantity)
+    {
+        this.score -= quantity;
+        refreshUI();
+    }
+
     private void refreshUI()
     {
         text.SetText(score.ToString());

@@ -4,10 +4,12 @@ using UnityEngine;
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] ParticleSystem explosionParticleSystem;
+    LevelProgressHandler levelProgressHandler;
 
     private void Start()
     {
-        explosionParticleSystem.Stop();
+        this.explosionParticleSystem.Stop();
+        this.levelProgressHandler = FindObjectOfType<LevelProgressHandler>();
     }
 
     private void OnTriggerEnter(Collider other) 
@@ -20,14 +22,13 @@ public class CollisionHandler : MonoBehaviour
         this.GetComponent<PlayerController>().enabled = false;
         this.GetComponent<MeshRenderer>().enabled = false;
         this.GetComponent<BoxCollider>().enabled = false;
-        explosionParticleSystem.Play();
+        this.explosionParticleSystem.Play();
 
         Invoke("ReloadLevel", 1f);
     }
 
     private void ReloadLevel()
     {
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
+        this.levelProgressHandler.ReloadLevel();
     }
 }
