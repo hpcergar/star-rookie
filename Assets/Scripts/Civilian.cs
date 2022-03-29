@@ -69,11 +69,7 @@ public class Civilian : MonoBehaviour
         fx.AddComponent<SelfDestruct>();
         MeshRenderer meshRenderer = this.gameObject.GetComponent<MeshRenderer>();
         meshRenderer.enabled = false;
-        Invoke("ReloadLevel", 1f);
-    }
-
-    private void ReloadLevel()
-    {
-        this.levelProgressHandler.ReloadLevel();
+        this.levelProgressHandler.ReloadLevelAfter(1.7f);
+        Destroy(this.gameObject);
     }
 }
