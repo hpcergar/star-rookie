@@ -7,6 +7,7 @@ public class Civilian : MonoBehaviour
     [SerializeField] GameObject hitVFX;
     [SerializeField] int healthPoints = 10;
     [SerializeField] int scorePerHit = 10;
+    [SerializeField] bool isInvulnerable = false;
     GameObject parentGameObject;
     private int damagePerHit = 10;
 
@@ -29,6 +30,10 @@ public class Civilian : MonoBehaviour
 
     private void OnParticleCollision(GameObject other) 
     {
+        if(this.isInvulnerable){
+            return;
+        }
+        
         this.ProcessHit();
         if(this.healthPoints > 0) {
             HitCivilian(other);

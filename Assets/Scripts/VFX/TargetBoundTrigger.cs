@@ -30,6 +30,7 @@ public class TargetBoundTrigger : MonoBehaviour
         }
         else if (this.HasBecomeInvisible(isCurrentlyVisible))
         {
+            this.wasVisible = false;
             this.DetachVfxFromParent();
         }
     }
