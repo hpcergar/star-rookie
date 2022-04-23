@@ -114,6 +114,7 @@ MonoBehaviour:
   hitVFX: {fileID: 4587629092234356771, guid: 62367d27ea6a6c440befb04a3f672d7d, type: 3}
   healthPoints: 40
   scorePerHit: 50
+  isInvulnerable: 0
 --- !u!1 &330535566390173812
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,6 +427,10 @@ PrefabInstance:
     - target: {fileID: 6326439485311708581, guid: 5c8f70387c418404fbb2e7cb6f7e9eb0, type: 3}
       propertyPath: m_Name
       value: TargetBound
+      objectReference: {fileID: 0}
+    - target: {fileID: 8810257573902559329, guid: 5c8f70387c418404fbb2e7cb6f7e9eb0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c8f70387c418404fbb2e7cb6f7e9eb0, type: 3}

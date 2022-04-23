@@ -17,7 +17,7 @@ public class TargetBoundTrigger : MonoBehaviour
         this.cameraInstance = Camera.main;
         this.currentTransform = this.gameObject.GetComponent<Transform>();
         this.vfxParent = GameObject.FindWithTag("VfxSpawnAtRuntime");
-        this.CreateVfxInstance();
+        Debug.Log("Created: " + this.gameObject.name);        
     }
 
     private void Update()
@@ -26,6 +26,7 @@ public class TargetBoundTrigger : MonoBehaviour
         if (this.HasBecomeVisible(isCurrentlyVisible))
         {
             this.wasVisible = true;
+            this.CreateVfxInstance();
             this.AttachVfxToParent(this.vfxPrefab);
         }
         else if (this.HasBecomeInvisible(isCurrentlyVisible))
