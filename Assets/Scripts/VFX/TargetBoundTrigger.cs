@@ -17,7 +17,6 @@ public class TargetBoundTrigger : MonoBehaviour
         this.cameraInstance = Camera.main;
         this.currentTransform = this.gameObject.GetComponent<Transform>();
         this.vfxParent = GameObject.FindWithTag("VfxSpawnAtRuntime");
-        Debug.Log("Created: " + this.gameObject.name);        
     }
 
     private void Update()

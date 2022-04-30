@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class TargetVFX : MonoBehaviour
 {
-    GameObject targetBound;
+    GameObject targetBound; // Polygon (TargetBound) mesh in the GameObject (ship, collider) where VFX will be attached to.
+
+    // Cache
     Camera cameraInstance;
     Canvas canvas;
     RectTransform rectTransform;
@@ -63,7 +65,7 @@ public class TargetVFX : MonoBehaviour
         Vector2 max = extentPoints[0];
         foreach (Vector2 v in extentPoints)
         {
-            min = new Vector2(Mathf.Min(min.x, v.x), Mathf.Min(min.y, v.x));
+            min = new Vector2(Mathf.Min(min.x, v.x), Mathf.Min(min.y, v.y));
             max = new Vector2(Mathf.Max(max.x, v.x), Mathf.Max(max.y, v.y));
         }
 

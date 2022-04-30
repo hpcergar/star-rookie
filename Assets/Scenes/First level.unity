@@ -5120,6 +5120,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shuttle - small
       objectReference: {fileID: 0}
+    - target: {fileID: 1084040991156068863, guid: c4f5bd9fac92d06419fdb001d89a377c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1096653775394484798, guid: c4f5bd9fac92d06419fdb001d89a377c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5130,11 +5134,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1096653775394484798, guid: c4f5bd9fac92d06419fdb001d89a377c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1096653775394484798, guid: c4f5bd9fac92d06419fdb001d89a377c, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1096653775394484798, guid: c4f5bd9fac92d06419fdb001d89a377c, type: 3}
       propertyPath: m_LocalPosition.x
