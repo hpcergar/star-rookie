@@ -4289,15 +4289,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 306704432964753880, guid: e3538457d95f3c54096726dc92916758, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -12.271
+      value: 0.000001449222
       objectReference: {fileID: 0}
     - target: {fileID: 306704432964753880, guid: e3538457d95f3c54096726dc92916758, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -82.002
+      value: 0.344935
       objectReference: {fileID: 0}
     - target: {fileID: 306704432964753880, guid: e3538457d95f3c54096726dc92916758, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 15.739
+      value: 0.0000001586303
       objectReference: {fileID: 0}
     - target: {fileID: 308586612358308728, guid: e3538457d95f3c54096726dc92916758, type: 3}
       propertyPath: m_Name
@@ -6180,7 +6180,7 @@ PlayableDirector:
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
-  m_InitialTime: 28
+  m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: -8294175344909270650, guid: 945a855b96db6ed429a3ea5832e0bd1f, type: 2}
     value: {fileID: 1890559814}
