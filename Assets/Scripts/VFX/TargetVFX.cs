@@ -25,7 +25,10 @@ public class TargetVFX : MonoBehaviour
     private void Update()
     {
         if(null == this.canvas){
-            this.canvas = GetComponentInParent<Canvas>().rootCanvas;
+            Canvas currentCanvas = GetComponentInParent<Canvas>();
+            if(null != currentCanvas) {
+                this.canvas = currentCanvas.rootCanvas;
+            }
         }
         if (false == this.IsReady())
         {

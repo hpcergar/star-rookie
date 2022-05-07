@@ -9,6 +9,7 @@ TagManager:
   - Civilian
   - TargetBounds
   - VfxSpawnAtRuntime
+  - MasterTimeline
   layers:
   - Default
   - TransparentFX
