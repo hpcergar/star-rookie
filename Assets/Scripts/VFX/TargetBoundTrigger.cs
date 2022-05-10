@@ -69,7 +69,7 @@ public class TargetBoundTrigger : MonoBehaviour
     private bool IsVisible()
     {
         Vector3 position = this.cameraInstance.WorldToViewportPoint(this.currentTransform.position);
-        return position.x > 0 && position.x < 1 && position.y > 0 && position.y < 1;
+        return position.x > 0 && position.x < 1 && position.y > 0 && position.y < 1 && position.z > 0;
     }
 
     private bool HasBecomeVisible(bool isVisible)
