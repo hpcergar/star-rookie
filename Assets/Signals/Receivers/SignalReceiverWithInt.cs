@@ -27,7 +27,6 @@ public class SignalReceiverWithInt : MonoBehaviour, INotificationReceiver
             var matches = signalAssetEventPairs.Where(x => ReferenceEquals(x.signalAsset, intEmitter.asset));
             foreach( var m in matches)
             {
-                Debug.Log("Match " + m.ToString());
                 m.events.Invoke(intEmitter.parameter);
             }
         }
