@@ -7,8 +7,10 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject hitVFX;
     [SerializeField] int healthPoints = 10;
     [SerializeField] int scorePerHit = 10;
+    [SerializeField] float vulnerableAfter = 0;
     GameObject parentGameObject;
     private int damagePerHit = 10;
+    private bool isInvulnerable = false;
 
     ScoreBoard scoreBoard;
 
@@ -17,6 +19,10 @@ public class Enemy : MonoBehaviour
         this.scoreBoard = FindObjectOfType<ScoreBoard>();
         this.parentGameObject = GameObject.FindWithTag("SpawnAtRuntime");
         this.AddRigidbody();
+        if(this.vulnerableAfter > 0f) {
+            this.isInvulnerable = true;
+            Invoke("SetVulnerable", this.vulnerableAfter);
+        }
     }
 
     private void AddRigidbody()
@@ -27,6 +33,9 @@ public class Enemy : MonoBehaviour
 
     private void OnParticleCollision(GameObject other) 
     {
+        if(this.isInvulnerable) {
+            return;
+        }
         this.ProcessHit();
         if(this.healthPoints > 0) {
             HitEnemy(other);
@@ -66,5 +75,10 @@ public class Enemy : MonoBehaviour
         fx.transform.parent = this.parentGameObject.transform;
         fx.AddComponent<SelfDestruct>();
         Destroy(this.gameObject);    
+    }
+
+    private void SetVulnerable()
+    {
+        this.isInvulnerable = false;
     }
 }
