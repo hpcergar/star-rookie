@@ -38,6 +38,7 @@ public class LevelProgressHandler : MonoBehaviour
     {
         PlayableDirector playableDirector = GameObject.FindWithTag("MasterTimeline").GetComponent<PlayableDirector>();
         float delay = this.checkpoints[this.checkpointIndex];
+        delay = delay + (float)playableDirector.initialTime;
         playableDirector.time = delay;
         playableDirector.Play();
     }
