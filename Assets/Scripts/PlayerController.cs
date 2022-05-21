@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     [Header("Player input tuning")]
     [SerializeField] float controlRollFactor = -20f;
     [SerializeField] float controlPitchFactor = 15f;
-    float startDelay = 1f; // TODO back to 1f
+    float startDelay = 0f; // TODO back to 1f
     bool isStarted = false;
     
 
