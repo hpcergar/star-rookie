@@ -1,4 +1,3 @@
-using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class CollisionHandler : MonoBehaviour
@@ -12,11 +11,11 @@ public class CollisionHandler : MonoBehaviour
         this.levelProgressHandler = FindObjectOfType<LevelProgressHandler>();
     }
 
-    private void OnTriggerEnter(Collider other) 
+    private void OnTriggerEnter(Collider other)
     {
         StartCrashSequance();
     }
-
+    
     private void StartCrashSequance()
     {
         this.GetComponent<PlayerController>().enabled = false;
