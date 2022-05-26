@@ -25,6 +25,7 @@ public class MotherShipWeakPoint : MonoBehaviour
     {
         Rigidbody currentRigidbody = this.gameObject.AddComponent<Rigidbody>();
         currentRigidbody.useGravity = false;
+        currentRigidbody.isKinematic = true;
     }
 
     private void OnParticleCollision(GameObject other)
