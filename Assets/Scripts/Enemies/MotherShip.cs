@@ -27,10 +27,16 @@ public class MotherShip : MonoBehaviour
         this.frontWeakPoints.SetActive(true);
         this.rearWeakPoints.SetActive(false);
     }
-    
+
     public void EnableRearWeakPoints()
     {
         this.frontWeakPoints.SetActive(false);
         this.rearWeakPoints.SetActive(true);
+    }
+    
+    public void DisableAllWeakPoints()
+    {
+        this.frontWeakPoints.SetActive(false);
+        this.rearWeakPoints.SetActive(false);
     }
 }

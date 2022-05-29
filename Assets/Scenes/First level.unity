@@ -10646,7 +10646,7 @@ PlayableDirector:
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
-  m_InitialTime: 125
+  m_InitialTime: 150
   m_SceneBindings:
   - key: {fileID: -8294175344909270650, guid: 945a855b96db6ed429a3ea5832e0bd1f, type: 2}
     value: {fileID: 1890559814}
@@ -10759,6 +10759,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 5780f6665fc51d94f83d9d233e2fd78b, type: 2}
     - {fileID: 11400000, guid: acdcada44de8a5545894c768b3f9e83d, type: 2}
     - {fileID: 11400000, guid: ac9fcbe6e3303bd43905f0f2549d61a9, type: 2}
+    - {fileID: 11400000, guid: 2107d97851b58044685af00626f39336, type: 2}
+    - {fileID: 11400000, guid: 752607002033e584f927664c8811b617, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls: []
@@ -10833,6 +10835,34 @@ MonoBehaviour:
         - m_Target: {fileID: 308586612816320652}
           m_TargetAssemblyTypeName: MotherShip, Assembly-CSharp
           m_MethodName: EnableRearWeakPoints
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1746765721}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 308586612816320652}
+          m_TargetAssemblyTypeName: MotherShip, Assembly-CSharp
+          m_MethodName: DisableAllWeakPoints
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -22394,6 +22424,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cac69404dd93a940bee2ee1086478bf, type: 3}
+--- !u!1 &1746765716 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4761907588901087618, guid: d016dc9e3f5a1434481e4b0b3d61f0bf, type: 3}
+  m_PrefabInstance: {fileID: 5890836857450017011}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1746765721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746765716}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a204b80f726908e4189e2ed806c0e394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1750712767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27030,6 +27077,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2249883025610433604, guid: d016dc9e3f5a1434481e4b0b3d61f0bf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3707275142416614782, guid: d016dc9e3f5a1434481e4b0b3d61f0bf, type: 3}
       propertyPath: m_Enabled
       value: 1
