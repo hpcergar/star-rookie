@@ -22,23 +22,28 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float controlRollFactor = -20f;
     [SerializeField] float controlPitchFactor = 15f;
     float startDelay = 0f; // TODO back to 1f
-    bool isStarted = false;
+    bool areControlsEnabled = false;
     
 
     private void Start()
     {
-        Invoke("StartControls", startDelay);
+        Invoke("EnableControls", startDelay);
         ToggleLasers(false);
     }
 
-    private void StartControls()
+    public void EnableControls()
     {
-        isStarted = true;
+        areControlsEnabled = true;
+    }
+
+    public void DisableControls()
+    {
+        areControlsEnabled = false;
     }
 
     void Update()
     {
-        if(false == isStarted) {
+        if(false == areControlsEnabled) {
             return;
         }
         

@@ -8,8 +8,6 @@ public class MotherShipIntroCameraManager : MonoBehaviour
     private Camera playerCamera;
     [SerializeField]
     private Camera civiliansCamera;
-    [SerializeField]
-    private Camera motherShipCamera;
 
     public void EnableCiviliansCamera()
     {
@@ -17,15 +15,9 @@ public class MotherShipIntroCameraManager : MonoBehaviour
         this.civiliansCamera.enabled = true;
     }
 
-    public void EnableMotherShipCamera()
-    {
-        this.civiliansCamera.enabled = false;
-        this.motherShipCamera.enabled = true;
-    }
-    
     public void EnableMainCamera()
     {
-        this.motherShipCamera.enabled = false;
+        this.civiliansCamera.enabled = false;
         this.playerCamera.enabled = true;
     }
 }
