@@ -10646,7 +10646,7 @@ PlayableDirector:
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
-  m_InitialTime: 150
+  m_InitialTime: 30
   m_SceneBindings:
   - key: {fileID: -8294175344909270650, guid: 945a855b96db6ed429a3ea5832e0bd1f, type: 2}
     value: {fileID: 1890559814}
@@ -10739,7 +10739,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fec77b69c5b3024db0e1193fe4effa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  signalAssetEventPairs: []
+  signalAssetEventPairs:
+  - signalAsset: {fileID: 11400000, guid: 1b46fa64e12475d43acd6de8cbd3ef53, type: 2}
+    events:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1875107336}
+          m_TargetAssemblyTypeName: LevelProgressHandler, Assembly-CSharp
+          m_MethodName: SetCheckpointIndex
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &844441766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18198,7 +18214,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410609973}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!4 &1410609977
 Transform:
   m_ObjectHideFlags: 0

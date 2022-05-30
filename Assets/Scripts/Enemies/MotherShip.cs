@@ -6,11 +6,19 @@ public class MotherShip : MonoBehaviour
     private GameObject frontWeakPoints;
     private GameObject rearWeakPoints;
 
-    private void Start() 
+    private void OnEnable() 
     {
-        var colliders = this.gameObject.transform.Find("Hit colliders").gameObject;
-        this.frontWeakPoints = colliders.transform.Find("Front").gameObject;
-        this.rearWeakPoints = colliders.transform.Find("Rear").gameObject;
+        CacheColliders();
+    }
+
+    private void CacheColliders()
+    {
+        var hitColliders = this.gameObject.transform.Find("Hit colliders");
+        if(hitColliders) {
+            var colliders = this.gameObject.transform.Find("Hit colliders").gameObject;
+            this.frontWeakPoints = colliders.transform.Find("Front").gameObject;
+            this.rearWeakPoints = colliders.transform.Find("Rear").gameObject;
+        }
     }
 
     public void NotifyWeakPointHasBeenDestroyed()

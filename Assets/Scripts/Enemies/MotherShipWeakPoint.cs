@@ -82,6 +82,9 @@ public class MotherShipWeakPoint : MonoBehaviour
     private void NotifyWeakPointHasBeenDestroyed()
     {
         GameObject motherShip = GameObject.FindWithTag("MotherShip");
+        if(null == motherShip) {
+            return;
+        }
         MotherShip motherShipScript = motherShip.GetComponent<MotherShip>();
         if(null != motherShipScript) {
             motherShipScript.NotifyWeakPointHasBeenDestroyed();

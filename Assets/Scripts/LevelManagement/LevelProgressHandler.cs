@@ -13,7 +13,7 @@ public class LevelProgressHandler : MonoBehaviour
         0f,
         40.0f,
         77.0f,
-        127.0f
+        150.0f
     };
 
     private void Awake()
@@ -38,7 +38,9 @@ public class LevelProgressHandler : MonoBehaviour
     {
         PlayableDirector playableDirector = GameObject.FindWithTag("MasterTimeline").GetComponent<PlayableDirector>();
         float delay = this.checkpoints[this.checkpointIndex];
-        delay = delay + (float)playableDirector.initialTime;
+        if(this.checkpointIndex == 0) {
+            delay = delay + (float)playableDirector.initialTime;
+        }
         playableDirector.time = delay;
         playableDirector.Play();
     }
