@@ -26,7 +26,8 @@ public class MotherShip : MonoBehaviour
         int remainingWeakPointCount = GameObject.FindGameObjectsWithTag("MotherShipWeakPoint").Length;
         if(remainingWeakPointCount <= 0) {
             Debug.Log("Destroyed");
-            // TODO launch cutscene
+            LevelProgressHandler levelProgressHandler = FindObjectOfType<LevelProgressHandler>();
+            levelProgressHandler.SuccessLevel();
         }
     }
 

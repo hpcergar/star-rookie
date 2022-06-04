@@ -8,6 +8,7 @@ public class LevelProgressHandler : MonoBehaviour
     // Checkpoints handling
     [SerializeField]
     private int checkpointIndex = 0;
+    private int deaths = 0;
     private float[] checkpoints = new float[4]
     {
         0f,
@@ -15,6 +16,7 @@ public class LevelProgressHandler : MonoBehaviour
         77.0f,
         150.0f
     };
+
 
     private void Awake()
     {
@@ -24,7 +26,7 @@ public class LevelProgressHandler : MonoBehaviour
             Destroy(this.gameObject);
             return;
         }
-        
+
         DontDestroyOnLoad(this.gameObject);
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
@@ -38,7 +40,8 @@ public class LevelProgressHandler : MonoBehaviour
     {
         PlayableDirector playableDirector = GameObject.FindWithTag("MasterTimeline").GetComponent<PlayableDirector>();
         float delay = this.checkpoints[this.checkpointIndex];
-        if(this.checkpointIndex == 0) {
+        if (this.checkpointIndex == 0)
+        {
             delay = delay + (float)playableDirector.initialTime;
         }
         playableDirector.time = delay;
@@ -47,7 +50,8 @@ public class LevelProgressHandler : MonoBehaviour
 
     public void ReloadLevelAfter(float delay)
     {
-        if(0f == delay) {
+        if (0f == delay)
+        {
             this.ReloadLevel();
             return;
         }
@@ -63,6 +67,19 @@ public class LevelProgressHandler : MonoBehaviour
     public void ReloadLevel()
     {
         Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);        
+        SceneManager.LoadScene(currentScene.name);
+    }
+
+    public void IncreaseDeaths()
+    {
+        this.deaths++;
+    }
+
+    public void SuccessLevel()
+    {
+        ScoreBoard scoreBoard = FindObjectOfType<ScoreBoard>();
+        PlayerPrefs.SetInt("score", scoreBoard.GetCurrentScore());
+        PlayerPrefs.SetInt("deaths", this.deaths);
+        SceneManager.LoadScene("Success scene");
     }
 }

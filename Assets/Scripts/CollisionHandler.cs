@@ -22,12 +22,12 @@ public class CollisionHandler : MonoBehaviour
         this.GetComponent<MeshRenderer>().enabled = false;
         this.GetComponent<BoxCollider>().enabled = false;
         this.explosionParticleSystem.Play();
-
         Invoke("ReloadLevel", 1f);
     }
 
     private void ReloadLevel()
     {
+        this.levelProgressHandler.IncreaseDeaths();
         this.levelProgressHandler.ReloadLevel();
     }
 }
