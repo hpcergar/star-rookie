@@ -1230,6 +1230,40 @@ PlayableDirector:
     value: {fileID: 440526898}
   - key: {fileID: -7162217291618675776, guid: 6015d80d74e829f4388c9cebdc5954f0, type: 2}
     value: {fileID: 788363119}
+  - key: {fileID: -8294175344909270650, guid: 945a855b96db6ed429a3ea5832e0bd1f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 1042311243899895705, guid: 945a855b96db6ed429a3ea5832e0bd1f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -5905806895578447370, guid: 945a855b96db6ed429a3ea5832e0bd1f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 2743950618969373735, guid: 945a855b96db6ed429a3ea5832e0bd1f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 4527796533767632896, guid: 945a855b96db6ed429a3ea5832e0bd1f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -6718092531306820315, guid: 945a855b96db6ed429a3ea5832e0bd1f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -6880185859646286271, guid: 945a855b96db6ed429a3ea5832e0bd1f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -4233132011842748382, guid: 945a855b96db6ed429a3ea5832e0bd1f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 6806749239758312594, guid: 945a855b96db6ed429a3ea5832e0bd1f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -2930614492611407778, guid: 945a855b96db6ed429a3ea5832e0bd1f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 3419431658023963327, guid: 945a855b96db6ed429a3ea5832e0bd1f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -8542019024846558131, guid: 945a855b96db6ed429a3ea5832e0bd1f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -4425910597115751456, guid: 945a855b96db6ed429a3ea5832e0bd1f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -4025563039438469820, guid: 945a855b96db6ed429a3ea5832e0bd1f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -8278944453709404535, guid: 945a855b96db6ed429a3ea5832e0bd1f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 9206214121369753530, guid: 945a855b96db6ed429a3ea5832e0bd1f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -6046624927922976002, guid: 945a855b96db6ed429a3ea5832e0bd1f, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - d5ee0e71c92530d4b8ce67be45f9ce37: {fileID: 0}
@@ -1326,7 +1360,7 @@ MonoBehaviour:
         m_Calls: []
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1278637769}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: MotherShipIntroCameraManager, Assembly-CSharp
           m_MethodName: EnableCiviliansCamera
           m_Mode: 1
@@ -1352,7 +1386,7 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1278637769}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: MotherShipIntroCameraManager, Assembly-CSharp
           m_MethodName: EnableMainCamera
           m_Mode: 1
@@ -1969,7 +2003,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1278637770}
-  - component: {fileID: 1278637769}
   m_Layer: 0
   m_Name: CameraManager
   m_TagString: Untagged
@@ -1977,20 +2010,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1278637769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1278637768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e455d2214ff79b4da368b2d61604054, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerCamera: {fileID: 0}
-  civiliansCamera: {fileID: 1410609974}
 --- !u!4 &1278637770
 Transform:
   m_ObjectHideFlags: 0
