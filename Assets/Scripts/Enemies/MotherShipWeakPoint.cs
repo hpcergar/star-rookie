@@ -87,7 +87,7 @@ public class MotherShipWeakPoint : MonoBehaviour
         }
         MotherShip motherShipScript = motherShip.GetComponent<MotherShip>();
         if(null != motherShipScript) {
-            motherShipScript.NotifyWeakPointHasBeenDestroyed();
+            motherShipScript.NotifyWeakPointHasBeenDestroyed(this.gameObject.GetInstanceID());
         }
     }
 }
