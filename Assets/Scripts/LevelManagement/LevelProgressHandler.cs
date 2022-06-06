@@ -4,7 +4,6 @@ using UnityEngine.Playables;
 
 public class LevelProgressHandler : MonoBehaviour
 {
-
     // Checkpoints handling
     [SerializeField]
     private int checkpointIndex = 0;
@@ -16,6 +15,16 @@ public class LevelProgressHandler : MonoBehaviour
         77.0f,
         150.0f
     };
+
+    // Cache
+    private ScoreBoard scoreBoard;
+    private GameObject musicPlayerGameObject;
+    
+    private void Start() 
+    {
+        this.scoreBoard = FindObjectOfType<ScoreBoard>();
+        this.musicPlayerGameObject = FindObjectOfType<MusicPlayer>().gameObject;    
+    }
 
     private void Awake()
     {
@@ -37,7 +46,12 @@ public class LevelProgressHandler : MonoBehaviour
 
     private void Play()
     {
-        PlayableDirector playableDirector = GameObject.FindWithTag("MasterTimeline").GetComponent<PlayableDirector>();
+        GameObject masterTimeline = GameObject.FindWithTag("MasterTimeline");
+        if(null == masterTimeline) {
+            return;
+        }
+
+        PlayableDirector playableDirector = masterTimeline.GetComponent<PlayableDirector>();
         float delay = this.checkpoints[this.checkpointIndex];
         if (this.checkpointIndex == 0)
         {
@@ -76,9 +90,12 @@ public class LevelProgressHandler : MonoBehaviour
 
     public void SuccessLevel()
     {
-        ScoreBoard scoreBoard = FindObjectOfType<ScoreBoard>();
-        PlayerPrefs.SetInt("score", scoreBoard.GetCurrentScore());
+        PlayerPrefs.SetInt("score", this.scoreBoard.GetCurrentScore());
         PlayerPrefs.SetInt("deaths", this.deaths);
+        if(this.musicPlayerGameObject) {
+            Destroy(this.musicPlayerGameObject);
+        } else {
+        }
         SceneManager.LoadScene("Success scene");
     }
 }
