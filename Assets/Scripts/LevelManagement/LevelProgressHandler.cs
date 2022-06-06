@@ -17,7 +17,6 @@ public class LevelProgressHandler : MonoBehaviour
         150.0f
     };
 
-
     private void Awake()
     {
         int instancesCount = FindObjectsOfType<LevelProgressHandler>().Length;

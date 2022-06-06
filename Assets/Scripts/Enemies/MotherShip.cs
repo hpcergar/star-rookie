@@ -41,7 +41,6 @@ public class MotherShip : MonoBehaviour
         foreach (Transform weakPoint in weakPointsGroup.transform)
         {
             this.weakPoints.Add(weakPoint.gameObject.GetInstanceID(), weakPoint.gameObject);
-            Debug.Log("Added weakpoint with ID " + weakPoint.gameObject.GetInstanceID().ToString() + " with name " + weakPoint.gameObject.name);
         }
     }
 
