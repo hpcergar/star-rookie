@@ -490,7 +490,7 @@ Transform:
   - {fileID: 1163276648}
   - {fileID: 1299927559}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &20839067
 GameObject:
@@ -3022,7 +3022,7 @@ Transform:
   - {fileID: 1324211425}
   - {fileID: 993366457}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &168448455
 PrefabInstance:
@@ -7449,7 +7449,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &573562379
 PrefabInstance:
@@ -10324,7 +10324,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &788363122
 MonoBehaviour:
@@ -14223,7 +14223,7 @@ Transform:
   - {fileID: 1955627468}
   - {fileID: 156610255}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1121710015
 PrefabInstance:
@@ -14767,7 +14767,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1149964549
 PrefabInstance:
@@ -18532,7 +18532,7 @@ Transform:
   - {fileID: 1177782330}
   - {fileID: 1777998323}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1401729195
 GameObject:
@@ -23620,7 +23620,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!154 &1800141351
 TerrainCollider:
   m_ObjectHideFlags: 0
@@ -26841,7 +26841,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2127311822
 PrefabInstance:
@@ -27456,9 +27456,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1588018311128532772, guid: 874f150befb118c47a39c3f2d5603f32, type: 3}
+      propertyPath: m_TerrainData
+      value: 
+      objectReference: {fileID: 15600000, guid: 163901518a2c6c7469090ba4d3bd0dd0, type: 2}
     - target: {fileID: 1588018311450673716, guid: 874f150befb118c47a39c3f2d5603f32, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1588018311450673716, guid: 874f150befb118c47a39c3f2d5603f32, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27502,8 +27506,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1588018311450673717, guid: 874f150befb118c47a39c3f2d5603f32, type: 3}
       propertyPath: m_Name
-      value: Terrain Copy Mothership
+      value: Terrain Mothership
       objectReference: {fileID: 0}
+    - target: {fileID: 1588018311629170321, guid: 874f150befb118c47a39c3f2d5603f32, type: 3}
+      propertyPath: m_TerrainData
+      value: 
+      objectReference: {fileID: 15600000, guid: 41f8e11c266da6f42a970e89b7a50699, type: 2}
+    - target: {fileID: 1588018311779232077, guid: 874f150befb118c47a39c3f2d5603f32, type: 3}
+      propertyPath: m_TerrainData
+      value: 
+      objectReference: {fileID: 15600000, guid: a4d3350eb59676f47b9c83641f4013f2, type: 2}
+    - target: {fileID: 1588018312837923106, guid: 874f150befb118c47a39c3f2d5603f32, type: 3}
+      propertyPath: m_TerrainData
+      value: 
+      objectReference: {fileID: 15600000, guid: 430b0d6803537aa4f8811fb31becd5de, type: 2}
+    - target: {fileID: 1588018313213535870, guid: 874f150befb118c47a39c3f2d5603f32, type: 3}
+      propertyPath: m_TerrainData
+      value: 
+      objectReference: {fileID: 15600000, guid: 5b0f1585691da8a498e22066baabc5f7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 874f150befb118c47a39c3f2d5603f32, type: 3}
 --- !u!1001 &1922618703564529425
@@ -27572,11 +27592,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2717992595010819153, guid: 4fe3b24c53cc3c84c9d5c221bcde185c, type: 3}
       propertyPath: m_Name
-      value: Terrain Copy Start
+      value: Terrain Start
+      objectReference: {fileID: 0}
+    - target: {fileID: 2717992595010819153, guid: 4fe3b24c53cc3c84c9d5c221bcde185c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2717992595010819502, guid: 4fe3b24c53cc3c84c9d5c221bcde185c, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2717992595010819502, guid: 4fe3b24c53cc3c84c9d5c221bcde185c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27618,6 +27642,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2717992595010819503, guid: 4fe3b24c53cc3c84c9d5c221bcde185c, type: 3}
+      propertyPath: m_TerrainData
+      value: 
+      objectReference: {fileID: 15600000, guid: 8c280f05d0f5bec48a669c744e6f343f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fe3b24c53cc3c84c9d5c221bcde185c, type: 3}
 --- !u!1001 &3184703785625949961
@@ -27686,7 +27714,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1387978314011784999, guid: 752e19fff7651f341aafabad723966e5, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1387978314011784999, guid: 752e19fff7651f341aafabad723966e5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27917,7 +27945,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5890836856716986342, guid: d016dc9e3f5a1434481e4b0b3d61f0bf, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5890836856716986342, guid: d016dc9e3f5a1434481e4b0b3d61f0bf, type: 3}
       propertyPath: m_AnchorMax.x
