@@ -1,7 +1,7 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class IntroController : MonoBehaviour
+public class CutsceneController : MonoBehaviour
 {
     void Update()
     {
@@ -14,6 +14,10 @@ public class IntroController : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
         int nextSceneIndex = currentScene.buildIndex + 1;
+
+        if(nextSceneIndex >= SceneManager.sceneCountInBuildSettings) {
+            nextSceneIndex = 0;
+        }
         SceneManager.LoadScene(nextSceneIndex);
     }
 }
