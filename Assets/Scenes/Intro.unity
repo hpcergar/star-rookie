@@ -2201,7 +2201,7 @@ PlayableDirector:
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
-  m_InitialTime: 20
+  m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: -8941683786238006983, guid: 1c3f77e5102a4c34e830a5c060cf88c4, type: 2}
     value: {fileID: 305612337}
@@ -3202,78 +3202,6 @@ PrefabInstance:
     - target: {fileID: 2577622901550785776, guid: 3e353833e35b0344d938ec1fe7719f12, type: 3}
       propertyPath: m_Name
       value: Landing trail
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910116402312645673, guid: 3e353833e35b0344d938ec1fe7719f12, type: 3}
-      propertyPath: looping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910116402312645673, guid: 3e353833e35b0344d938ec1fe7719f12, type: 3}
-      propertyPath: lengthInSec
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910116402312645673, guid: 3e353833e35b0344d938ec1fe7719f12, type: 3}
-      propertyPath: ShapeModule.type
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910116402312645673, guid: 3e353833e35b0344d938ec1fe7719f12, type: 3}
-      propertyPath: ShapeModule.arc.value
-      value: 320.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910116402312645673, guid: 3e353833e35b0344d938ec1fe7719f12, type: 3}
-      propertyPath: ShapeModule.arc.spread
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910116402312645673, guid: 3e353833e35b0344d938ec1fe7719f12, type: 3}
-      propertyPath: ShapeModule.donutRadius
-      value: 8.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910116402312645673, guid: 3e353833e35b0344d938ec1fe7719f12, type: 3}
-      propertyPath: ShapeModule.radius.value
-      value: 31.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910116402312645673, guid: 3e353833e35b0344d938ec1fe7719f12, type: 3}
-      propertyPath: ShapeModule.radiusThickness
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910116402312645673, guid: 3e353833e35b0344d938ec1fe7719f12, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910116402312645673, guid: 3e353833e35b0344d938ec1fe7719f12, type: 3}
-      propertyPath: InitialModule.startSizeY.scalar
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910116402312645673, guid: 3e353833e35b0344d938ec1fe7719f12, type: 3}
-      propertyPath: InitialModule.startSizeZ.scalar
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910116402312645673, guid: 3e353833e35b0344d938ec1fe7719f12, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910116402312645673, guid: 3e353833e35b0344d938ec1fe7719f12, type: 3}
-      propertyPath: InitialModule.startSize.minScalar
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910116402312645673, guid: 3e353833e35b0344d938ec1fe7719f12, type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910116402312645673, guid: 3e353833e35b0344d938ec1fe7719f12, type: 3}
-      propertyPath: InitialModule.startSizeY.minScalar
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910116402312645673, guid: 3e353833e35b0344d938ec1fe7719f12, type: 3}
-      propertyPath: InitialModule.startSizeZ.minScalar
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910116402312645673, guid: 3e353833e35b0344d938ec1fe7719f12, type: 3}
-      propertyPath: InitialModule.startSpeed.minScalar
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910116402312645673, guid: 3e353833e35b0344d938ec1fe7719f12, type: 3}
-      propertyPath: InitialModule.startLifetime.minScalar
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e353833e35b0344d938ec1fe7719f12, type: 3}
