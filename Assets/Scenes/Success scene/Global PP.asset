@@ -67,7 +67,7 @@ MonoBehaviour:
     value: 1
   filtering:
     overrideState: 1
-    value: {x: 44.534985, y: 88.19345}
+    value: {x: 77.95953, y: 88.19345}
   minLuminance:
     overrideState: 1
     value: -2.1
@@ -104,7 +104,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 10.18
+    value: 1.11
   threshold:
     overrideState: 1
     value: 1
@@ -116,7 +116,7 @@ MonoBehaviour:
     value: 65441.72
   diffusion:
     overrideState: 1
-    value: 5
+    value: 5.01
   anamorphicRatio:
     overrideState: 1
     value: 0
