@@ -37,6 +37,15 @@ public class TargetBoundTrigger : MonoBehaviour
 
     private void OnDestroy()
     {
+        this.DestroyVFXInstance();
+    }
+
+    private void OnDisable() {
+        this.DestroyVFXInstance();
+    }
+
+    private void DestroyVFXInstance()
+    {
         if(null != this.vfxInstance) {
             Destroy(this.vfxInstance);
         }
@@ -55,7 +64,6 @@ public class TargetBoundTrigger : MonoBehaviour
     private void AttachVfxToParent(GameObject vfxPrefab)
     {
         this.vfxInstance.transform.parent = this.vfxParent.transform;
-        this.vfxInstance.SetActive(true);
     }
 
     private void DetachVfxFromParent()
@@ -64,7 +72,6 @@ public class TargetBoundTrigger : MonoBehaviour
         {
             return;
         }
-        this.vfxInstance.SetActive(false);
         this.vfxInstance.transform.parent = null;
     }
 
