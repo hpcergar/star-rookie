@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MusicPlayer : MonoBehaviour
+public class SingletonMusicPlayer : MonoBehaviour
 {
     [SerializeField] float startOffset = 0f;
 
     private void Awake()
     {
-        int musicPlayerCount = FindObjectsOfType<MusicPlayer>().Length;
+        int musicPlayerCount = FindObjectsOfType<SingletonMusicPlayer>().Length;
         if (musicPlayerCount > 1)
         {
             Destroy(this.gameObject);

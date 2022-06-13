@@ -23,7 +23,7 @@ public class LevelProgressHandler : MonoBehaviour
     private void Start() 
     {
         this.scoreBoard = FindObjectOfType<ScoreBoard>();
-        this.musicPlayerGameObject = FindObjectOfType<MusicPlayer>().gameObject;    
+        this.musicPlayerGameObject = FindObjectOfType<SingletonMusicPlayer>().gameObject;    
     }
 
     private void Awake()
