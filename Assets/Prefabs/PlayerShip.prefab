@@ -161,6 +161,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1280151146474327616}
     m_Modifications:
+    - target: {fileID: 4718429408132428505, guid: 2702dcd2677fde541a0733120eae2817, type: 3}
+      propertyPath: m_DrawHalo
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5053666593491699292, guid: 2702dcd2677fde541a0733120eae2817, type: 3}
       propertyPath: m_Name
       value: Point Light
