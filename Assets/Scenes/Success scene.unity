@@ -1013,7 +1013,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ab2bf076e82eb334fa3a5d83a873ec2b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5e2d680dc74adbf4cafd1605b6f15279, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1125,7 +1125,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83c7ead05541e4247a3d22bc8f005c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startOffset: 9
+  startOffset: 8.9
+  loop: 0
+  loopOffset: 0
 --- !u!95 &834754663 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3023779819576485349, guid: d3bc3d23f9856d14193d67f5b9f4e051, type: 3}
