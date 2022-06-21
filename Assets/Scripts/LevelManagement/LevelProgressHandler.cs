@@ -23,7 +23,7 @@ public class LevelProgressHandler : MonoBehaviour
     private void Start() 
     {
         this.scoreBoard = FindObjectOfType<ScoreBoard>();
-        this.musicPlayerGameObject = FindObjectOfType<SingletonMusicPlayer>().gameObject;    
+        this.musicPlayerGameObject = FindObjectOfType<SingletonMusicPlayer>().gameObject;
     }
 
     private void Awake()
@@ -74,6 +74,7 @@ public class LevelProgressHandler : MonoBehaviour
 
     public void SetCheckpointIndex(int index)
     {
+        Debug.Log("Set checkpoint: " + index.ToString());
         this.checkpointIndex = index;
     }
 
