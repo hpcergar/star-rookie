@@ -13,7 +13,7 @@ public class LevelProgressHandler : MonoBehaviour
         0f,
         40.0f,
         77.0f,
-        150.5f
+        151.5f
     };
 
     // Cache
