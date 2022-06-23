@@ -1314,10 +1314,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 340670212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75157874f148ba841ba6c0d3e9c7d6b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 83c7ead05541e4247a3d22bc8f005c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startOffset: 0
+  loop: 0
+  singleton: 0
+  loopOffset: 0
 --- !u!1 &374685791
 GameObject:
   m_ObjectHideFlags: 0
@@ -2060,10 +2063,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 889160744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75157874f148ba841ba6c0d3e9c7d6b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 83c7ead05541e4247a3d22bc8f005c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startOffset: 0
+  loop: 0
+  singleton: 0
+  loopOffset: 0
 --- !u!82 &889160747
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3650,10 +3656,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1695928297}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75157874f148ba841ba6c0d3e9c7d6b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 83c7ead05541e4247a3d22bc8f005c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startOffset: 1
+  loop: 0
+  singleton: 0
+  loopOffset: 0
 --- !u!82 &1695928300
 AudioSource:
   m_ObjectHideFlags: 0

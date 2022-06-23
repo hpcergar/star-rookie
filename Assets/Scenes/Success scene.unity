@@ -1126,8 +1126,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startOffset: 8.9
-  loop: 0
-  loopOffset: 0
+  loop: 1
+  singleton: 0
+  loopOffset: 115.3
 --- !u!95 &834754663 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3023779819576485349, guid: d3bc3d23f9856d14193d67f5b9f4e051, type: 3}

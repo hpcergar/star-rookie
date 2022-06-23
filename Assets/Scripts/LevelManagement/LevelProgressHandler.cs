@@ -13,7 +13,7 @@ public class LevelProgressHandler : MonoBehaviour
         0f,
         40.0f,
         77.0f,
-        150.0f
+        150.5f
     };
 
     // Cache
@@ -23,7 +23,7 @@ public class LevelProgressHandler : MonoBehaviour
     private void Start() 
     {
         this.scoreBoard = FindObjectOfType<ScoreBoard>();
-        this.musicPlayerGameObject = FindObjectOfType<SingletonMusicPlayer>().gameObject;
+        this.musicPlayerGameObject = FindObjectOfType<MusicPlayer>().gameObject;
     }
 
     private void Awake()
@@ -74,7 +74,6 @@ public class LevelProgressHandler : MonoBehaviour
 
     public void SetCheckpointIndex(int index)
     {
-        Debug.Log("Set checkpoint: " + index.ToString());
         this.checkpointIndex = index;
     }
 
@@ -95,7 +94,6 @@ public class LevelProgressHandler : MonoBehaviour
         PlayerPrefs.SetInt("deaths", this.deaths);
         if(this.musicPlayerGameObject) {
             Destroy(this.musicPlayerGameObject);
-        } else {
         }
         SceneManager.LoadScene("Success scene");
     }

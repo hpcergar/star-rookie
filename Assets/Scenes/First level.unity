@@ -10195,6 +10195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startOffset: 2
   loop: 1
+  singleton: 1
   loopOffset: 115.3
 --- !u!1 &794725378
 GameObject:
