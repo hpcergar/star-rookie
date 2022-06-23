@@ -95,6 +95,14 @@ public class LevelProgressHandler : MonoBehaviour
         if(this.musicPlayerGameObject) {
             Destroy(this.musicPlayerGameObject);
         }
+
+        this.ResetProgress();
         SceneManager.LoadScene("Success scene");
+    }
+
+    private void ResetProgress()
+    {
+        this.checkpointIndex = 0;
+        this.deaths = 0;
     }
 }
