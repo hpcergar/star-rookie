@@ -68,7 +68,6 @@ public class Civilian : MonoBehaviour
 
     private void KillCivilian()
     {
-        this.scoreBoard.DecreaseScore(this.scorePerHit);
         GameObject fx = Instantiate(deathFX, this.transform.position, Quaternion.identity);
         fx.transform.parent = this.parentGameObject.transform;
         fx.AddComponent<SelfDestruct>();

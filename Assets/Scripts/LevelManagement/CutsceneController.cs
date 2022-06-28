@@ -3,11 +3,23 @@ using UnityEngine;
 
 public class CutsceneController : MonoBehaviour
 {
+    private bool skipEnabled = false;
+
+    void Start() 
+    {
+        Invoke("EnableSkip", 1f);
+    }
+    
     void Update()
     {
-        if(Input.anyKey) {
+        if(skipEnabled && Input.anyKey) {
             this.GoToLevel();
         }
+    }
+
+    private void EnableSkip()
+    {
+        this.skipEnabled = true;
     }
 
     public void GoToLevel()

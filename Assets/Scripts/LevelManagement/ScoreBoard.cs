@@ -3,8 +3,8 @@ using TMPro;
 
 public class ScoreBoard : MonoBehaviour
 {
+    [SerializeField]
     private int score = 0;
-    private int deaths = 0;
     private TMP_Text text;
 
     private void Start() 
@@ -19,25 +19,9 @@ public class ScoreBoard : MonoBehaviour
         refreshUI();
     }
 
-    public void DecreaseScore(int quantity)
-    {
-        this.score -= quantity;
-        refreshUI();
-    }
-
     public int GetCurrentScore()
     {
         return this.score;
-    }
-
-    public int GetCurrentDeaths()
-    {
-        return this.deaths;
-    }
-
-    public void IncreaseDeaths()
-    {
-        this.deaths++;
     }
 
     private void refreshUI()

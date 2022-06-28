@@ -16,16 +16,6 @@ public class LevelProgressHandler : MonoBehaviour
         151.5f
     };
 
-    // Cache
-    private ScoreBoard scoreBoard;
-    private GameObject musicPlayerGameObject;
-    
-    private void Start() 
-    {
-        this.scoreBoard = FindObjectOfType<ScoreBoard>();
-        this.musicPlayerGameObject = FindObjectOfType<MusicPlayer>().gameObject;
-    }
-
     private void Awake()
     {
         int instancesCount = FindObjectsOfType<LevelProgressHandler>().Length;
@@ -90,10 +80,12 @@ public class LevelProgressHandler : MonoBehaviour
 
     public void SuccessLevel()
     {
-        PlayerPrefs.SetInt("score", this.scoreBoard.GetCurrentScore());
+        ScoreBoard scoreBoard = FindObjectOfType<ScoreBoard>();
+        PlayerPrefs.SetInt("score", scoreBoard.GetCurrentScore());
         PlayerPrefs.SetInt("deaths", this.deaths);
-        if(this.musicPlayerGameObject) {
-            Destroy(this.musicPlayerGameObject);
+        GameObject musicPlayerGameObject = FindObjectOfType<MusicPlayer>().gameObject;
+        if(musicPlayerGameObject) {
+            Destroy(musicPlayerGameObject);
         }
 
         this.ResetProgress();
