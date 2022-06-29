@@ -9,10 +9,10 @@ public class CutsceneController : MonoBehaviour
     {
         Invoke("EnableSkip", 1f);
     }
-    
+
     void Update()
     {
-        if(skipEnabled && Input.anyKey) {
+        if(skipEnabled && Input.GetButton("Fire1")) {
             this.GoToLevel();
         }
     }
