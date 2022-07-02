@@ -29848,6 +29848,26 @@ PrefabInstance:
       propertyPath: m_ShowCustomSorter
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8970066203802617867, guid: 7d3b5476d3ceb624cb03b992b940e05d, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8970216266549161621, guid: 7d3b5476d3ceb624cb03b992b940e05d, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8970526466686010699, guid: 7d3b5476d3ceb624cb03b992b940e05d, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8970626391858808951, guid: 7d3b5476d3ceb624cb03b992b940e05d, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8970626391858808951, guid: 7d3b5476d3ceb624cb03b992b940e05d, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d3b5476d3ceb624cb03b992b940e05d, type: 3}
 --- !u!4 &306704433649263147 stripped
