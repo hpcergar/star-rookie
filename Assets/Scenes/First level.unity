@@ -7965,7 +7965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4955562699522732076, guid: 11e85efee2ccfc84b9dd6d8f4f791afc, type: 3}
       propertyPath: m_text
-      value: Oh, wait!
+      value: Oh, no!
       objectReference: {fileID: 0}
     - target: {fileID: 4955562699522732076, guid: 11e85efee2ccfc84b9dd6d8f4f791afc, type: 3}
       propertyPath: m_fontSize
@@ -8158,7 +8158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4955562699522732076, guid: 11e85efee2ccfc84b9dd6d8f4f791afc, type: 3}
       propertyPath: m_text
-      value: I'll mark them in white. Do not shoot them.
+      value: I'll mark them in white. Don't shoot them!
       objectReference: {fileID: 0}
     - target: {fileID: 4955562699522732076, guid: 11e85efee2ccfc84b9dd6d8f4f791afc, type: 3}
       propertyPath: m_fontSize
@@ -11040,7 +11040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4955562699522732076, guid: 11e85efee2ccfc84b9dd6d8f4f791afc, type: 3}
       propertyPath: m_text
-      value: 'Ok, we did it, civilians can now escape.
+      value: 'Good job! The civilians can now escape.
 
 '
       objectReference: {fileID: 0}

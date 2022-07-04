@@ -613,7 +613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4955562699522732076, guid: 11e85efee2ccfc84b9dd6d8f4f791afc, type: 3}
       propertyPath: m_text
-      value: After this training, you seem ready to fight the enemy.
+      value: After this training, you are ready to fight the enemy.
       objectReference: {fileID: 0}
     - target: {fileID: 8569322245362908734, guid: 11e85efee2ccfc84b9dd6d8f4f791afc, type: 3}
       propertyPath: m_Pivot.x
@@ -2268,7 +2268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4955562699522732076, guid: 11e85efee2ccfc84b9dd6d8f4f791afc, type: 3}
       propertyPath: m_text
-      value: The enemy is here! Quick, find a way to escape. And fight back!
+      value: The enemy is here!!! There are too many, find a way to escape!
       objectReference: {fileID: 0}
     - target: {fileID: 8569322245362908734, guid: 11e85efee2ccfc84b9dd6d8f4f791afc, type: 3}
       propertyPath: m_Pivot.x
@@ -4530,7 +4530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4955562699522732076, guid: 11e85efee2ccfc84b9dd6d8f4f791afc, type: 3}
       propertyPath: m_text
-      value: Prepare your journey back and...
+      value: Prepare your flight back and...
       objectReference: {fileID: 0}
     - target: {fileID: 8569322245362908734, guid: 11e85efee2ccfc84b9dd6d8f4f791afc, type: 3}
       propertyPath: m_Pivot.x
