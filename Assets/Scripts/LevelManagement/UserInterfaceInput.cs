@@ -1,7 +1,12 @@
 using UnityEngine;
 
-public class QuitApplication : MonoBehaviour
+public class UserInterfaceInput : MonoBehaviour
 {
+    void Start() 
+    {
+        Cursor.visible = false;
+    }
+
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape)) {
