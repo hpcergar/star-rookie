@@ -8,10 +8,11 @@ public class LevelProgressHandler : MonoBehaviour
     [SerializeField]
     private int checkpointIndex = 0;
     private int deaths = 0;
-    private float[] checkpoints = new float[4]
+    private float[] checkpoints = new float[5]
     {
         0f,
         40.0f,
+        56.4f,
         77.0f,
         151.5f
     };
